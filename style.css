@@ -1,0 +1,244 @@
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #222;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 15px;
+        }
+
+        .header a {
+            color: #222;
+            text-decoration: none;
+            font-size: 13px;
+            transition: text-decoration 0.2s;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .apps-btn {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            opacity: 0.75;
+            transition: opacity 0.2s;
+        }
+
+        .apps-btn:hover {
+            opacity: 1;
+        }
+
+        .profile-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #4285f4, #ea4335, #fbbc05, #34a853);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            margin-top: -150px;
+        }
+
+        .logo {
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 272px;
+            height: 92px;
+        }
+
+        /* Search Section */
+        .search-container {
+            width: 100%;
+            max-width: 584px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .search-box {
+            width: 100%;
+            height: 44px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            padding: 0 45px 0 45px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.2s;
+        }
+
+        .search-box:hover {
+            box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+            border-color: rgba(223,225,229,0);
+        }
+
+        .search-box:focus {
+            box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+            border-color: rgba(223,225,229,0);
+        }
+
+        .search-icon, .voice-icon, .camera-icon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .search-icon {
+            left: 14px;
+            opacity: 0.6;
+        }
+
+        .voice-icon {
+            right: 45px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .voice-icon:hover {
+            opacity: 1;
+        }
+
+        .camera-icon {
+            right: 14px;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .camera-icon:hover {
+            opacity: 1;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .btn {
+            background: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.2s;
+            outline: none;
+        }
+
+        .btn:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            background-color: #f1f3f4;
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+
+        /* Language Links */
+        .languages {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 13px;
+            color: #3c4043;
+        }
+
+        .languages a {
+            color: #1a0dab;
+            text-decoration: none;
+            margin: 0 3px;
+        }
+
+        .languages a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
+        }
+
+        .footer-country {
+            padding: 15px 30px;
+            border-bottom: 1px solid #dadce0;
+            font-size: 15px;
+            color: rgba(0,0,0,.54);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-left, .footer-right {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(0,0,0,.54);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: rgba(0,0,0,.87);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .footer-links {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .footer-left, .footer-right {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .main {
+                margin-top: -100px;
+            }
+        }
+    
